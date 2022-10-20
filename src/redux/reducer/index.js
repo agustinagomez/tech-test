@@ -31,7 +31,7 @@ const rootReducer = createReducer(initialState, builder => {
             state.selected = state.selected.filter(m => m.id !== action.payload.id);
         })
         .addCase(SUBMIT_VOTES, state => {
-            state.voted = state.selected.slice();
+            state.voted = [...state.voted, ...state.selected];
             state.selected = [];
         })
         .addCase(SET_MODAL_OPEN, (state, action) => {

@@ -64,7 +64,7 @@ const Home = () => {
             className={s.submitBtn}
             onClick={handleSubmit}
           >
-            Submit Votes {`(${selected.length}/${categories.length})`}
+            Submit Votes {`(${selected.length})`}
           </button>
         : ''
       }
