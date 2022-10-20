@@ -23,8 +23,10 @@ const SearchBar = () => {
 
   const handleSelect = (item) => {
     if(!isSelected(item)){
-        dispatch(selectMovie(item))
-        setOpen({...open, selected: true})
+        if(canSelect(item)){
+            dispatch(selectMovie(item))
+            setOpen({...open, selected: true})
+        }
     } else {
         dispatch(unselectMovie(item))
         setOpen({...open, unselected: true})
