@@ -1,6 +1,10 @@
 const express = require('express');
 
+const cors = require('cors');
+
 const app = express();
+
+app.use(cors());
 
 const port = process.env.PORT || 8080;
 app.listen(port);
@@ -78,7 +82,7 @@ const generateMoviesData = () => {
         title: "Chadwick Boseman for Ma Rainey's Black Bottom",
         photoUrL:
           'https://variety.com/wp-content/uploads/2020/12/ma_raineys_black_bottom_ver2.jpg',
-        id: 'chadwick-boseman',
+        id: 'chadwick-boseman-ma-rainey',
         category: 'Best Actor',
       },
       {

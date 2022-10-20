@@ -1,0 +1,51 @@
+.container{
+    width: 61vw;
+    max-width: calc(600px + 1vw);
+    margin: 2vh 0 0 2vw;
+}
+
+.resultWrapper {
+    display: flex;
+    gap: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.resultPic {
+    width: 40px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.resultInfo {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.resultTitle {
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.resultCategory {
+    letter-spacing: 0.5px;
+    color: var(--secondary-color);
+}
+.resultSelected {
+    background-color: var(--secondary-color);
+}
+.resultSelected .resultTitle {
+    color: white;
+}
+.resultSelected .resultCategory {
+    color: white;
+}
+.disabled{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
