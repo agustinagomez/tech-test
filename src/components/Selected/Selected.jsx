@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
 import Popover from '@mui/material/Popover';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import { useSelector } from 'react-redux'
 import s from './Selected.module.css'
 
